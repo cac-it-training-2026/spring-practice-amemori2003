@@ -11,14 +11,14 @@ GETとPOSTの違い
 <hr>
 <p>
 <h4>GET送信:今の気分はどの色？</h4>
-<form th:action="@{'TODO'}" >
+<form th:action="@{/send/get_method}" >
 <input type="radio" name="'TODO'" value="'TODO'"/><label>赤</label>
 <input type="radio" name="'TODO'" value="'TODO'"/><label>オレンジ</label>
 <input type="radio" name="'TODO'" value="'TODO'"/><label>黄</label>
 <input type="radio" name="'TODO'" value="'TODO'"/><label>緑</label>
 <input type="radio" name="'TODO'" value="'TODO'"/><label>青</label>
 <input type="radio" name="'TODO'" value="'TODO'"/><label>紫</label>
-<input type="submit" value="'TODO'" />
+<input type="submit" value="GETで送信" />
 </form>
 </p>
 <hr>
@@ -31,7 +31,7 @@ GETとPOSTの違い
 <input type="radio" name="'TODO'" value="'TODO'"/><label>緑</label>
 <input type="radio" name="'TODO'" value="'TODO'"/><label>青</label>
 <input type="radio" name="'TODO'" value="'TODO'"/><label>紫</label>
-<input type="submit" value="'TODO'" />
+<input type="submit" value="POSTで送信" />
 </form>
 </p>
 
